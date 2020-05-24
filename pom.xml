@@ -6,7 +6,7 @@
 
   <groupId>pine</groupId>
   <artifactId>pine</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>2.0-SNAPSHOT</version>
 
   <name>pine</name>
   <!-- FIXME change it to the project's website -->
@@ -26,12 +26,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-	  <distributionManagement>
+	<distributionManagement>
     <repository>
         <id>central</id>
         <name>DESKTOP-LEGC44G-releases</name>
-        <url>http://localhost:8081/artifactory/libs-release</url>
+        <url>http://localhost:8081/artifactory/sample</url>
     </repository>
+    <snapshotRepository>
+        <id>central</id>
+        <name>DESKTOP-LEGC44G-snapshots</name>
+        <url>http://localhost:8081/artifactory/sample</url>
+    </snapshotRepository>
+</distributionManagement>
+
 </distributionManagement>
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
